@@ -410,11 +410,24 @@ const App: React.FC = () => {
         <form onSubmit={handleSubmit} className="space-y-6 bg-white p-6 rounded-3xl shadow-xl">
           <div className="space-y-2">
             <label className="text-sm font-semibold text-gray-600">নাম লিখুন:</label>
-            <input required type="text" className="w-full p-4 rounded-2xl bg-gray-50 border-none ring-1 ring-gray-200 focus:ring-2 focus:ring-blue-500" placeholder="যেমন: রহিম মিয়া" value={name} onChange={(e) => setName(e.target.value)} />
+            <input 
+              required 
+              type="text" 
+              className="w-full p-4 rounded-2xl bg-gray-50 border-none ring-1 ring-gray-200 focus:ring-2 focus:ring-blue-500 text-black font-semibold" 
+              placeholder="যেমন: রহিম মিয়া" 
+              value={name} 
+              onChange={(e) => setName(e.target.value)} 
+            />
           </div>
           <div className="space-y-2">
             <label className="text-sm font-semibold text-gray-600">আইডি নম্বর (ঐচ্ছিক):</label>
-            <input type="text" className="w-full p-4 rounded-2xl bg-gray-50 border-none ring-1 ring-gray-200 focus:ring-2 focus:ring-blue-500" placeholder="যেমন: ১০০১" value={workerIdNum} onChange={(e) => setWorkerIdNum(e.target.value)} />
+            <input 
+              type="text" 
+              className="w-full p-4 rounded-2xl bg-gray-50 border-none ring-1 ring-gray-200 focus:ring-2 focus:ring-blue-500 text-black font-semibold" 
+              placeholder="যেমন: ১০০১" 
+              value={workerIdNum} 
+              onChange={(e) => setWorkerIdNum(e.target.value)} 
+            />
           </div>
           <div className="space-y-3">
             <label className="text-sm font-semibold text-gray-600 block">ছবি তুলুন:</label>
@@ -440,11 +453,21 @@ const App: React.FC = () => {
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
               <label className="text-[10px] font-bold text-gray-400 uppercase">ফোন</label>
-              <input type="tel" className="w-full p-3 rounded-xl bg-gray-50 ring-1 ring-gray-100 text-sm" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="০১৭..." />
+              <input 
+                type="tel" 
+                className="w-full p-3 rounded-xl bg-gray-50 ring-1 ring-gray-100 text-sm text-black font-semibold" 
+                value={phone} 
+                onChange={(e) => setPhone(e.target.value)} 
+                placeholder="০১৭..." 
+              />
             </div>
             <div className="space-y-2">
               <label className="text-[10px] font-bold text-gray-400 uppercase">পদবী</label>
-              <select className="w-full p-3 rounded-xl bg-gray-50 ring-1 ring-gray-100 text-sm" value={designation} onChange={(e) => setDesignation(e.target.value)}>
+              <select 
+                className="w-full p-3 rounded-xl bg-gray-50 ring-1 ring-gray-100 text-sm text-black font-semibold" 
+                value={designation} 
+                onChange={(e) => setDesignation(e.target.value)}
+              >
                 <option value="মিস্ত্রি">মিস্ত্রি</option>
                 <option value="হেল্পার">হেল্পার</option>
                 <option value="লেবার">লেবার</option>

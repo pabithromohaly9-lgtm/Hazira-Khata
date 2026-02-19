@@ -21,8 +21,8 @@ import {
   CircleStop,
   Filter
 } from 'lucide-react';
-import { Worker, AttendanceRecord, AppView, AttendanceStatus, LastMarked } from './types';
-import { getAIInsights } from './services/geminiService';
+import { Worker, AttendanceRecord, AppView, AttendanceStatus, LastMarked } from './types.ts';
+import { getAIInsights } from './services/geminiService.ts';
 
 const LOCAL_STORAGE_KEY = 'hazira_khata_data';
 

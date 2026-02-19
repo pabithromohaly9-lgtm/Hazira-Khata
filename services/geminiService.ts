@@ -1,6 +1,6 @@
 
 import { GoogleGenAI, Type } from "@google/genai";
-import { Worker, AttendanceRecord } from "../types";
+import { Worker, AttendanceRecord } from "../types.ts";
 
 export const getAIInsights = async (workers: Worker[], records: AttendanceRecord[]) => {
   const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });

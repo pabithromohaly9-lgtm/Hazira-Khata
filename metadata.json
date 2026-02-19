@@ -1,0 +1,8 @@
+{
+  "name": "Hazira Khata",
+  "description": "A robust, mobile-first digital attendance tracker for managing laborer records with AI-powered insights and summaries.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
